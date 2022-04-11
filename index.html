@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.0.23/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+   <script type="module" src="js/firebase.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <title>Practice</title>
+</head>
+
+<body class="h-screen">
+
+    <header class="container mx-auto">
+        <div class="text-center absolute" >
+            <h1 class="text-4xl mt-3 text-emerald-400 hover:text-emerald-500">To Do Application</h1>
+        </div>
+    </header>
+
+
+
+
+    <div id="task_list container ">
+
+        <div class="flex flex-col items-center justify-center h-screen ">
+
+            <div  id="blur" class="h-screen w-screen bg-neutral-900 absolute opacity-70 ">
+
+            </div>
+
+            <div class="container" >
+                <div id="form" class="shadow-xl border drop-shadow-2xl rounded-lg p-3 bg-neutral-50 sm:w-1/2 lg:w-1/3 md:w-1/2 absolute">
+
+                    <div class="p-2">
+                        <h1 class="text-center text-3xl">
+                            Add New Task
+                        </h1>
+                    </div>
+
+                    <div class="p-2">
+
+                        <div class="flex flex-col shadow-xl p-2 rounded-lg my-2 p-5">
+                            <legend class="p-1 font-normal">Title </legend>
+                            <input type="text" class="p-2 border drop-shadow-lg rounded-md font-normal "
+                                placeholder="Title of task">
+                        </div> 
+                        <div class="flex flex-col shadow-xl p-2 rounded-lg my-2 p-5 ">
+                            <legend class="p-1 font-normal">Description </legend>
+                            <input type="text" class="p-2 border drop-shadow-lg rounded-md font-normal "
+                                placeholder="Description of task">
+                        </div> 
+
+                        <div class="flex flex-col">
+                            <button id="subBtn" type="submit" class="p-2 my-2 font-normal shadow-lg drop-shadow-xl bg-emerald-400 rounded-lg hover:bg-emerald-500 hover:text-neutral-50">Add task</button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="p-3 flex  flex-col items-center justify-center">
+
+                <img id="add-btn" class="rounded-full shadow-lg drop-shadow-2xl bg-neutral-50  p-2 my-4" src="res/add.png" alt="">
+                <h1 class="text-3xl font-light black-500 ">
+                    No Task Added
+                </h1>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+<!-- <script type="modular" src="js/firebase.js"></script> -->
+
+</body>
+
+</html>
